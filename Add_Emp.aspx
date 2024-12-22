@@ -64,15 +64,21 @@
             <h2>Add Employee</h2>
             <div class="form-group">
                 <label for="badgeNumber">Badge Number</label>
-                <asp:TextBox ID="badgeNumber" runat="server" CssClass="form-control" placeholder="Enter Badge Number"></asp:TextBox>
+                <asp:TextBox ID="badgeNumber" runat="server" CssClass="form-control" placeholder="Enter Badge Number" Required="true"></asp:TextBox>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="badgeNumber" 
+                    ErrorMessage="Badge Number is required" ForeColor="Red" Display="Dynamic" />
             </div>
             <div class="form-group">
                 <label for="employeeName">Name</label>
-                <asp:TextBox ID="employeeName" runat="server" CssClass="form-control" placeholder="Enter Name"></asp:TextBox>
+                <asp:TextBox ID="employeeName" runat="server" CssClass="form-control" placeholder="Enter Name" Required="true"></asp:TextBox>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="employeeName"
+                    ErrorMessage="Employee Name is required" ForeColor="Red" Display="Dynamic" />
             </div>
             <div class="form-group">
                 <label for="department">Department</label>
-                <asp:TextBox ID="department" runat="server" CssClass="form-control" placeholder="Enter Department"></asp:TextBox>
+                <asp:TextBox ID="department" runat="server" CssClass="form-control" placeholder="Enter Department" Required="true"></asp:TextBox>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="department"
+                    ErrorMessage="Department is required" ForeColor="Red" Display="Dynamic" />
             </div>
             <div class="form-group">
                 <asp:Button ID="submitBtn" runat="server" CssClass="btn-submit" Text="Submit" OnClick="SubmitBtn_Click" />
