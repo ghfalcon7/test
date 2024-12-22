@@ -1,10 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Add_Emp.aspx.cs" Inherits="Stock_Control.Add_Emp" %>
-<%@ MasterType VirtualPath="~/Site.Master" %>
+<%@ Page Title="Add Employee" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add_Emp.aspx.cs" Inherits="Stock_Control.Add_Emp" %>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Add Employee</title>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style>
         .form-container {
             max-width: 600px;
