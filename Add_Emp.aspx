@@ -57,7 +57,7 @@
                     ErrorMessage="Department is required" ForeColor="Red" Display="Dynamic" />
             </div>
             <div class="form-group">
-                <asp:Button ID="submitBtn" runat="server" CssClass="btn-submit" Text="Submit" OnClick="SubmitBtn_Click" />
+                <asp:Button ID="submitBtn" runat="server" CssClass="btn-submit" Text="Submit" OnClick="submitBtn_Click" />
             </div>
         </div>
 </asp:Content>
