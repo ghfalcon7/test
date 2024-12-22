@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Stock_Control
 {
-    public partial class add_emp_aspx : System.Web.UI.Page
+    public partial class Add_Emp : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
