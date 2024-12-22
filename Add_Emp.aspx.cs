@@ -14,7 +14,7 @@ namespace Stock_Control
             // Any page load initialization logic can go here
         }
 
-        protected void SubmitBtn_Click(object sender, EventArgs e)
+        protected void submitBtn_Click(object sender, EventArgs e)
         {
             // Access the TextBox controls and get their values
             string badgeNumberValue = badgeNumber.Text;
