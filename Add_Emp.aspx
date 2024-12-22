@@ -6,22 +6,13 @@
 <head runat="server">
     <title>Add Employee</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
         .form-container {
             max-width: 600px;
-            margin: 50px auto;
+            margin: 20px auto;
             padding: 20px;
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .form-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
         }
         .form-group {
             margin-bottom: 15px;
@@ -30,18 +21,6 @@
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        .form-group input:focus {
-            border-color: #007bff;
-            outline: none;
-            box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
         }
         .btn-submit {
             width: 100%;
@@ -52,14 +31,15 @@
             border-radius: 4px;
             font-size: 16px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
         .btn-submit:hover {
             background-color: #0056b3;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
         <div class="form-container">
             <h2>Add Employee</h2>
             <div class="form-group">
@@ -84,6 +64,4 @@
                 <asp:Button ID="submitBtn" runat="server" CssClass="btn-submit" Text="Submit" OnClick="SubmitBtn_Click" />
             </div>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>
